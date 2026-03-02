@@ -2,39 +2,79 @@
 <html>
 <head>
   <title>Hired By Travis</title>
-<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
   <style>
     body {
       margin: 0;
-      background: black;
+      background-image: url("TravBG.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
       color: white;
       font-family: Arial, sans-serif;
       text-align: center;
     }
-.heading {
-  font-family: 'Anton', Arial, sans-serif;
-  font-size: 32px;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-    .subheading {
-  font-family: 'Anton', Arial, sans-serif;
-  letter-spacing: 0.15em;
-  opacity: 0.85;
-}
-    #bg-video {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      object-fit: cover;
-      z-index: -1;
+
+    .heading {
+      font-family: 'Anton', Arial, sans-serif;
+      font-size: 32px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-top: 40px;
     }
 
-    <div class="button-row">
-  <img src="TravisGIF L.gif" class="side-gif" alt="Left Travis">
+    .subheading {
+      font-family: 'Anton', Arial, sans-serif;
+      letter-spacing: 0.15em;
+      opacity: 0.85;
+    }
 
+    .button-row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      margin-top: 40px;
+    }
+
+    .main-face {
+      width: 250px;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+
+    .main-face:hover {
+      transform: scale(1.05);
+    }
+
+    .side-gif {
+      width: 150px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1 class="heading">HELLO POTENTIAL CANDIDATE!</h1>
+  <p class="subheading">Are you interested in a job? Click on my face to see the openings!</p>
+
+  <div class="button-row">
+    <img src="TravisGIF L.gif" class="side-gif" alt="Left Travis">
+
+    <a href="https://sbmmanagement.wd108.myworkdayjobs.com/SBM?locations=c4fefbf9f9e1100111b3180ff2d70000">
+      <img src="Travis NoBG.png" class="main-face" alt="Click Travis">
+    </a>
+
+    <img src="TravisGIF R.gif" class="side-gif" alt="Right Travis">
+  </div>
+
+  <p style="opacity: 0.6; margin-top: 30px;">May the odds be ever in your favor!</p>
+
+</body>
+</html>
   <a href="https://sbmmanagement.wd108.myworkdayjobs.com/SBM?locations=c4fefbf9f9e1100111b3180ff2d70000">
     <img src="Travis NoBG.png" class="main-face" alt="Click Travis">
   </a>
